@@ -16,7 +16,7 @@ $(".clickybutton").click(function() {
         .then(function(data) {
             console.log(data);
             // The title of the article
-            $("#notes").append("<h3>Notes for Article: <h3></h4>" + data[0].title + "</h4><br/>");
+            $("#notes").append("<h3>Notes for Article: <h3></h4><i>'" + data[0].title + "'</i></h4><br/>");
             // An input to enter a new title
             $("#notes").append("<input id='titleinput' name='title' ><br/>");
             // A textarea toy add a new note body

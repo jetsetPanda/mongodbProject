@@ -106,7 +106,7 @@ app.get("/articles/:id", function(req, res) {
         });
 });
 
-app.get("/listnotes", function(req, res) {
+app.get("/notes", function(req, res) {
     db.Note.find({})
         .then(function(dbLibrary) {
             res.json(dbLibrary);

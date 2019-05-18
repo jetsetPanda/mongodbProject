@@ -49,7 +49,7 @@
             background-color: rgba(255, 255, 255, 0.055);
         }
         
-        button.switchy:hover {
+        button#submitBtn:hover {
             background-color: #e9bcb7;
             background-image: linear-gradient(315deg, #151616 0%, #423d3d 74%);
             -webkit-background-clip: border-box;
@@ -64,7 +64,25 @@
 
 <body class="bg-none" style="background: url('https://www.toptal.com/designers/subtlepatterns/patterns/ep_naturalblack.png');">
 
-{{{body}}}
+    <div class="container">
+        <div class="bg-banner text-center col-md-12 mb-2">
+            <span class="mb-0 bannertext speedfont">Szkraper</span>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <button class="btn btn-lg btn-block btn-dark">SKRAPE IT!</button>
+            </div>
+            <div class="col-md-6">
+                <button class="btn btn-lg btn-block btn-light">VIEW NOTES</button>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-8" id="articles"> </div>
+            <div class="col-md-4" id="notes"> </div>
+        </div>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
