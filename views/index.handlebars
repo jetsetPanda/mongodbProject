@@ -1,8 +1,8 @@
     <div class="container">
         <div class="bg-banner text-center col-md-12 mb-2">
-            <span class="mb-0 bannertext speedfont">HANDLEBARS Szkraper</span>
+            <span class="mb-0 bannertext speedfont">Jetset Szkraper</span>
         </div>
-        <div class="row">
+        <div class="row mb-2">
             <div class="col-md-6">
                 <a href="/scrape"><button class="btn btn-lg btn-block btn-dark">SKRAPE IT!</button></a>
             </div>
@@ -10,19 +10,19 @@
                 <button class="btn btn-lg btn-block btn-light">VIEW NOTES</button>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-            {{#each things}}
-            <div>
-                <div class="text-center"><img src="{{this.image}}" /></div><br/>
-                <span>{{this.title}}</span>
-                <span>{{this.link}}</span>       
-                <span>{{this.summary}}</span><br/>
-                <button class="clickybutton btn btn-block btn-warning" data-id="{{this._id}}">Add a Note</button><br/>
+        <div class="row mt-2">
+            <div class="col-md-6 mt-3">
+                {{#each things}}
+                <div class="mt-2">
+                    <div class="text-center"><img src="{{this.image}}" /></div><br/>
+                    <h3>{{this.title}}</h3><br/>    
+                    <p>{{this.summary}}</p><br/>
+                    <a href="{{this.link}}" class="btn btn-block btn-primary" role="button">View Full Article</a>
+                    <button class="clickybutton btn btn-block btn-warning" data-id="{{this._id}}">Add a Note</button><br/>
+                </div>
+                {{/each}}
             </div>
-            {{/each}}
-            </div>
-            <div class="col-md-4" id="notes"></div>
+            <div class="col-md-6" id="notes"></div>
         </div>
     </div>
 {{!-- 
